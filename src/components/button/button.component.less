@@ -1,0 +1,54 @@
+.dans-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    color: #ffffff;
+    background: #4c8251;
+
+    &:hover {
+      background: #55925b;
+    }
+
+    &[disabled] {
+      background: lighten(#4c8251, 30%);
+    }
+  }
+
+  &--secondary {
+    color: #ffffff;
+    background: #612c51;
+
+    &:hover {
+      background: #733460;
+    }
+
+    &[disabled] {
+      background: lighten(#612c51, 30%);
+    }
+  }
+
+  &--small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  &--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+
+  &--large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
